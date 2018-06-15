@@ -24,7 +24,7 @@ Run:
 docker run -it --rm andrewsav/jelly eun '“3ḅaė;œ»'
 ```
 
-Installing selinux / docker on fresh Fedora 27:
+Installing docker on fresh Fedora 27:
 
 ```bash
 dnf upgrade -y
