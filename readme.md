@@ -3,14 +3,20 @@
 Build:
 
 ```bash
-docker login
 docker build --no-cache -t andrewsav/jelly .
+```
+
+Issue: <https://github.com/pre-commit/pre-commit/issues/655>
+
+Publish:
+
+```bash
+docker login
 docker tag andrewsav/jelly andrewsav/jelly:v0.1
 docker push andrewsav/jelly
 docker push andrewsav/jelly:v0.1
 ```
 
-Issue: <https://github.com/pre-commit/pre-commit/issues/655>
 
 Run:
 
