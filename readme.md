@@ -37,3 +37,9 @@ dnf install docker-ce -y
 sudo systemctl enable docker
 sudo systemctl start docker
 ```
+
+Raspberry Pi Build:
+
+```bash
+docker build --no-cache -f Dockerfile.arm32v7 -t andrewsav/jelly .
+```

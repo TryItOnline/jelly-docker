@@ -1,0 +1,5 @@
+FROM arm32v7/python:3.6.5-slim
+RUN apt-get update -y && apt-get install git -y \
+  && git clone -q https://github.com/DennisMitchell/jellylanguage.git \
+  && pip3 install --upgrade ./jellylanguage
+ENTRYPOINT ["jelly"]
